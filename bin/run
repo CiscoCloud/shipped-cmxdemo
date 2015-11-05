@@ -1,6 +1,0 @@
-#!/bin/bash
-
-${0%/*}/build
-
-node server/server.js 
-
