@@ -1,6 +1,4 @@
 #!/bin/bash
-
-${0%/*}/build
-
-node server/server.js 
+if [[ ! -d .shipped/ ]]; then cp -R /tmp/node_modules/ ./; fi
+node server/server.js
 
